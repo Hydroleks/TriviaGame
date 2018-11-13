@@ -152,7 +152,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Game\GameDefines.h" />
     <ClInclude Include="Game\MultiChoice.h" />
+    <ClInclude Include="Game\PlayerRecord.h" />
     <ClInclude Include="Game\SingleChoice.h" />
     <ClInclude Include="Game\TextAnswer.h" />
     <ClInclude Include="Game\TriviaBase.h" />
@@ -161,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game\MultiChoice.cpp" />
+    <ClCompile Include="Game\PlayerRecord.cpp" />
     <ClCompile Include="Game\SingleChoice.cpp" />
     <ClCompile Include="Game\TextAnswer.cpp" />
     <ClCompile Include="Game\TriviaBase.cpp" />

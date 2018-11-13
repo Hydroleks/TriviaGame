@@ -30,6 +30,9 @@
     <ClCompile Include="TriviaFactory.cpp">
       <Filter>EntryPoint</Filter>
     </ClCompile>
+    <ClCompile Include="Game\PlayerRecord.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -49,6 +52,12 @@
     </ClInclude>
     <ClInclude Include="TriviaFactory.h">
       <Filter>EntryPoint</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameDefines.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayerRecord.h">
+      <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
