@@ -8,7 +8,7 @@ class TriviaFactory
 {
 public:
 	TriviaFactory();
-	~TriviaFactory();
+	virtual ~TriviaFactory();
 
 	std::unique_ptr<TriviaBase> createTrivia(int triviaType);
 	void printTriviaMenu() const;
