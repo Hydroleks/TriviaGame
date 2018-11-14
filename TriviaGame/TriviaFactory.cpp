@@ -22,11 +22,11 @@ std::unique_ptr<TriviaBase> TriviaFactory::createTrivia(int triviaType)
 	switch (triviaType)
 	{
 	case 1:
-		return std::unique_ptr<SingleChoice>(new SingleChoice());
+		return std::make_unique<SingleChoice>();
 	case 2:
-		return std::unique_ptr<MultiChoice>(new MultiChoice());
+		return std::make_unique<MultiChoice>();
 	case 3:
-		return std::unique_ptr<TextAnswer>(new TextAnswer());
+		return std::make_unique<TextAnswer>();
 	default:
 		std::cout << "Invalid input. Please read the menu and select an appropriate choice\n";
 		break;
