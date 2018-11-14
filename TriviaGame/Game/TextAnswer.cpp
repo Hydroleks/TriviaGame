@@ -6,7 +6,6 @@
 
 
 TextAnswer::TextAnswer()
-	: TriviaBase()
 {
 	std::cout << "TextAnswer trivia created.\n";
 

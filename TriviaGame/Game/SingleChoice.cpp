@@ -5,7 +5,6 @@
 #include <iostream>
 
 SingleChoice::SingleChoice()
-	: TriviaBase()
 {
 	std::cout << "SingleChoice (true or false?) trivia created\n";
 

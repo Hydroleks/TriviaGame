@@ -5,7 +5,6 @@
 
 
 MultiChoice::MultiChoice()
-	: TriviaBase()
 {
 	std::cout << "MultiChoice created.\n";
 
