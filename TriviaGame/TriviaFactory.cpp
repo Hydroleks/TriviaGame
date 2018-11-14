@@ -7,30 +7,28 @@
 
 #include <iostream>
 
-using namespace std;
-
 TriviaFactory::TriviaFactory()
 {
-	cout << "Factory is now open for business." << endl;
+	std::cout << "Factory is now open for business.\n";
 }
 
 TriviaFactory::~TriviaFactory()
 {
-	cout << "Factory shutting down." << endl;
+	std::cout << "Factory shutting down.\n";
 }
 
-unique_ptr<TriviaBase> TriviaFactory::createTrivia(int triviaType)
+std::unique_ptr<TriviaBase> TriviaFactory::createTrivia(int triviaType)
 {
 	switch (triviaType)
 	{
 	case 1:
-		return unique_ptr<SingleChoice>(new SingleChoice());
+		return std::unique_ptr<SingleChoice>(new SingleChoice());
 	case 2:
-		return unique_ptr<MultiChoice>(new MultiChoice());
+		return std::unique_ptr<MultiChoice>(new MultiChoice());
 	case 3:
-		return unique_ptr<TextAnswer>(new TextAnswer());
+		return std::unique_ptr<TextAnswer>(new TextAnswer());
 	default:
-		cout << "Invalid input. Please read the menu and select an appropriate choice" << endl;
+		std::cout << "Invalid input. Please read the menu and select an appropriate choice\n";
 		break;
 	}
 
@@ -39,7 +37,7 @@ unique_ptr<TriviaBase> TriviaFactory::createTrivia(int triviaType)
 
 void TriviaFactory::printTriviaMenu() const
 {
-	cout << "1: Single Choice\n"
+	std::cout << "1: Single Choice\n"
 		<< "2: Multiple Choice\n"
-		<< "3: Text Answers" << endl;
+		<< "3: Text Answers\n";
 }

@@ -3,12 +3,11 @@
 
 #include <iostream>
 
-using namespace std;
 
 MultiChoice::MultiChoice()
 	: TriviaBase()
 {
-	cout << "MultiChoice created." << endl;
+	std::cout << "MultiChoice created.\n";
 
 	mQuestions.push_back("Milk is a good source of: \nA) Calcium, \nB) Salt, \nC) Moon, \nD) What?");
 	mAnswers.push_back('a');
@@ -23,12 +22,12 @@ MultiChoice::MultiChoice()
 
 MultiChoice::~MultiChoice()
 {
-	cout << "MultiChoice destroyed." << endl;
+	std::cout << "MultiChoice destroyed.\n";
 }
 
 void MultiChoice::PrintDescription()
 {
-	cout << "Multiple choice is given; only 1 is correct." << endl;
+	std::cout << "Multiple choice is given; only 1 is correct.\n";
 }
 
 void MultiChoice::PlayQuestion(int questionID)
@@ -36,7 +35,7 @@ void MultiChoice::PlayQuestion(int questionID)
 	// TODO Implement play question and evaluate functionality.
 }
 
-bool MultiChoice::EvaluateAnswer(string answer)
+bool MultiChoice::EvaluateAnswer(std::string answer)
 {
 	// evaluate and return;
 	return false;

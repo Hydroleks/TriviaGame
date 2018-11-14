@@ -3,14 +3,12 @@
 
 #include <iostream>
 
-using namespace std;
-
 TriviaBase::TriviaBase()
 {
-	cout << "Base class constructed." << endl;
+	std::cout << "Base class constructed.\n";
 }
 
 TriviaBase::~TriviaBase()
 {
-	cout << "Base class destroyed." << endl;
+	std::cout << "Base class destroyed.\n";
 }

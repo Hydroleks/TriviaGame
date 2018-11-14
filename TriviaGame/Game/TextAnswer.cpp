@@ -5,12 +5,10 @@
 #include <iostream>
 
 
-using namespace std;
-
 TextAnswer::TextAnswer()
 	: TriviaBase()
 {
-	cout << "TextAnswer trivia created." << endl;
+	std::cout << "TextAnswer trivia created.\n";
 
 	mQuestions.push_back("What is 2 + 2 * 2?");
 	mAnswers.push_back('6');
@@ -24,12 +22,12 @@ TextAnswer::TextAnswer()
 
 TextAnswer::~TextAnswer()
 {
-	cout << "TextAnswer trivia destroyed." << endl;
+	std::cout << "TextAnswer trivia destroyed.\n";
 }
 
 void TextAnswer::PrintDescription()
 {
-	cout << "Text base asnwer should take a single line string in. Force all character to lower case and check if match." << endl;
+	std::cout << "Text base asnwer should take a single line string in. Force all character to lower case and check if match.\n";
 }
 
 void TextAnswer::PlayQuestion(int questionID)
@@ -37,7 +35,7 @@ void TextAnswer::PlayQuestion(int questionID)
 	// TODO Implement playquestion by id.
 }
 
-bool TextAnswer::EvaluateAnswer(string answer) 
+bool TextAnswer::EvaluateAnswer(std::string answer)
 {
 	// Evaluate and return true if correct.
 	return false;

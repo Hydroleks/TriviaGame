@@ -4,12 +4,10 @@
 
 #include <iostream>
 
-using namespace std;
-
 SingleChoice::SingleChoice()
 	: TriviaBase()
 {
-	cout << "SingleChoice (true or false?) trivia created" << endl;
+	std::cout << "SingleChoice (true or false?) trivia created\n";
 
 	mQuestions.push_back("This is a question? True or false");
 	mAnswers.push_back('t');
@@ -23,12 +21,12 @@ SingleChoice::SingleChoice()
 
 SingleChoice::~SingleChoice()
 {
-	cout << "SingleChoice trivia game destroyed." << endl;
+	std::cout << "SingleChoice trivia game destroyed.\n";
 }
 
 void SingleChoice::PrintDescription()
 {
-	cout << "True or false trivia. Only single answer is correct." << endl;
+	std::cout << "True or false trivia. Only single answer is correct.\n";
 }
 
 void SingleChoice::PlayQuestion(int quesionID)
@@ -36,7 +34,7 @@ void SingleChoice::PlayQuestion(int quesionID)
 	//TODO Implement question display and then evalute.
 }
 
-bool SingleChoice::EvaluateAnswer(string answer)
+bool SingleChoice::EvaluateAnswer(std::string answer)
 {
 	// return true or false to gain 1 or 0 points.
 	return false;

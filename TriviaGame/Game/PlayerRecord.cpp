@@ -8,5 +8,5 @@ PlayerRecord::PlayerRecord(std::string name)
 	: PlayerName(name)
 	, points(0)
 {
-	std::cout << "Player created: " << name << std::endl;
+	std::cout << "Player created: " << name << "\n";
 }
