@@ -1,5 +1,6 @@
 #pragma once
 #include "TriviaBase.h"
+
 #include <vector>
 
 class TextAnswer : public TriviaBase

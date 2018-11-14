@@ -1,6 +1,6 @@
 #include "pch.h"
-
 #include "TriviaBase.h"
+
 #include <iostream>
 
 using namespace std;

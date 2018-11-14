@@ -1,6 +1,8 @@
 #pragma once
-#include <memory>
 #include "TriviaBase.h"
+
+#include <memory>
+
 
 class TriviaFactory
 {
