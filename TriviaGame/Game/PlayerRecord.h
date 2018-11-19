@@ -12,4 +12,7 @@ private:
 public:
 	PlayerRecord(std::string name);
 	~PlayerRecord() = default;
+
+	void IncreasePoints(int points);
+	void PrintPlayDetails();
 };

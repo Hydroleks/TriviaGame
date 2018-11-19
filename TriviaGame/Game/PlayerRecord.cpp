@@ -10,3 +10,13 @@ PlayerRecord::PlayerRecord(std::string name)
 {
 	std::cout << "Player created: " << name << "\n";
 }
+
+void PlayerRecord::IncreasePoints(int points)
+{
+	this->points += points;
+}
+
+void PlayerRecord::PrintPlayDetails()
+{
+	std::cout << "Player Name: " << PlayerName << "\nPoints acquired: " << points << "\n";
+}
