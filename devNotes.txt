@@ -8,3 +8,9 @@ QuestionAndAnswers
 
 Have the Trivia tests take in a question box which would have a set of questions and answers of different marked types by an enum.
 The trivia classes would then evaluate each question and provide true or false back to the GameManager which would award the player 1 or 0 points.
+
+Check out:
+crtp pattern
+visitor pattern
+
+youtube video by a guy names bo qian, explains rule of 5.
