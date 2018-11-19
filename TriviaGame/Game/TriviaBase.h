@@ -18,7 +18,9 @@ public:
 	TriviaBase();
 	virtual ~TriviaBase();
 
+	int GetQuestionCount() { return mQuestions.size(); };
+
 	virtual void PrintDescription() = 0;
-	virtual bool EvaluateAnswer(std::string answer) = 0;
-	virtual void PlayQuestion(int questionID) = 0;
+	virtual bool EvaluateAnswer(int questionId, char answer);
+	virtual void PlayQuestion(int questionID);
 };

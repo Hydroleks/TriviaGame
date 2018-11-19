@@ -10,6 +10,4 @@ public:
 	~TextAnswer();
 
 	virtual void PrintDescription();
-	virtual bool EvaluateAnswer(std::string answer);
-	virtual void PlayQuestion(int questionID);
 };
