@@ -9,13 +9,13 @@ TextAnswer::TextAnswer()
 {
 	std::cout << "TextAnswer trivia created.\n";
 
-	mQuestions.push_back("What is 2 + 2 * 2?");
+	mQuestions.push_back("What is 2 + 2 * 2?\n");
 	mAnswers.push_back('6');
 
-	mQuestions.push_back("This text is a string of characters? Yes or no");
+	mQuestions.push_back("This text is a string of characters? Yes or no\n");
 	mAnswers.push_back('y');
 
-	mQuestions.push_back("Just type 'i'.");
+	mQuestions.push_back("Just type 'i'.\n");
 	mAnswers.push_back('i');
 }
 
@@ -27,15 +27,4 @@ TextAnswer::~TextAnswer()
 void TextAnswer::PrintDescription()
 {
 	std::cout << "Text base asnwer should take a single line string in. Force all character to lower case and check if match.\n";
-}
-
-void TextAnswer::PlayQuestion(int questionID)
-{
-	// TODO Implement playquestion by id.
-}
-
-bool TextAnswer::EvaluateAnswer(std::string answer)
-{
-	// Evaluate and return true if correct.
-	return false;
 }
