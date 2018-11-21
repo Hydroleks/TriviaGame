@@ -9,14 +9,14 @@ TextAnswer::TextAnswer()
 {
 	std::cout << "TextAnswer trivia created.\n";
 
-	mQuestions.push_back("What is 2 + 2 * 2?\n");
-	mAnswers.push_back('6');
+	mQuestions.emplace_back("What is 2 + 2 * 2?\n");
+	mAnswers.emplace_back('6');
 
-	mQuestions.push_back("This text is a string of characters? Yes or no\n");
-	mAnswers.push_back('y');
+	mQuestions.emplace_back("This text is a string of characters? Yes or no\n");
+	mAnswers.emplace_back('y');
 
-	mQuestions.push_back("Just type 'i'.\n");
-	mAnswers.push_back('i');
+	mQuestions.emplace_back("Just type 'i'.\n");
+	mAnswers.emplace_back('i');
 }
 
 TextAnswer::~TextAnswer()

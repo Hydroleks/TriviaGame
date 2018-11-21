@@ -8,14 +8,14 @@ SingleChoice::SingleChoice()
 {
 	std::cout << "SingleChoice (true or false?) trivia created\n";
 
-	mQuestions.push_back("This is a question? True or false\n");
-	mAnswers.push_back('t');
+	mQuestions.emplace_back("This is a question? True or false\n");
+	mAnswers.emplace_back('t');
 
-	mQuestions.push_back("This is a string. True or false\n");
-	mAnswers.push_back('t');
+	mQuestions.emplace_back("This is a string. True or false\n");
+	mAnswers.emplace_back('t');
 
-	mQuestions.push_back("Google is a space company. True or false\n");
-	mAnswers.push_back('f');
+	mQuestions.emplace_back("Google is a space company. True or false\n");
+	mAnswers.emplace_back('f');
 }
 
 SingleChoice::~SingleChoice()
