@@ -15,11 +15,7 @@ TriviaBase::~TriviaBase()
 
 bool TriviaBase::EvaluateAnswer(int questionID, char answer)
 {
-	if (answer == mAnswers[questionID])
-	{
-		return true;
-	}
-	return false;
+	return  answer == mAnswers[questionID];
 }
 
 void TriviaBase::PlayQuestion(int questionID)
