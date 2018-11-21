@@ -4,7 +4,7 @@
 #include <memory>
 
 
-class TriviaFactory
+class TriviaFactory final
 {
 public:
 	TriviaFactory();
